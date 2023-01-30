@@ -1,0 +1,23 @@
+{
+  "name": "ninjafoodtailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdahMilly/ninjafoodtailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdahMilly/ninjafoodtailwind/issues"
+  },
+  "homepage": "https://github.com/AdahMilly/ninjafoodtailwind#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
