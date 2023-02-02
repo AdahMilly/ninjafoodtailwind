@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="text-gray-600">
-    <div>
-      <div>
+    <div class="grid md:grid-cols-3">
+      <div class="md:col-span-1">
         <nav>
           <div class="text-green-500 sm:text-red-500 lg:text-blue-500">
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
@@ -18,11 +18,41 @@
             <li class="text-gray-700 font-bold">
               <a href="#">
                 <span>Home</span>
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <span>About</span>
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                  />
+                </svg>
               </a>
             </li>
             <li>
@@ -34,10 +64,16 @@
         </nav>
       </div>
 
-      <main class="px-16 py-6 bg-gray-100">
+      <main class="px-16 py-6 bg-gray-100 md:col-span-2">
         <div class="flex justify-center md:justify-end">
-          <a href="#" class="text-primary">Log in</a>
-          <a href="#" class="text-primary ml-2">Sign up</a>
+          <a href="#" class="btn text-primary border-yellow-200 md:border-2"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="btn text-primary border-yellow-200 ml-2 md:border-2"
+            >Sign up</a
+          >
         </div>
 
         <header>
@@ -52,15 +88,92 @@
 
           <div class="mt-8">
             <!-- cards go here -->
-            <div class="bg-white rounded overflow-hidden shadow-md">
+            <div class="card">
               <img
                 src="img/stew.jpg"
                 alt="stew"
                 class="w-full h-32 sm:h-48 object-cover"
               />
-              <div class="m-4">
+              <div class="m-4 grid lg:grid-cols-3 gap-10">
                 <span class="font-bold">5 Bean Chili Stew</span>
                 <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-4 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span>25 Mins</span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="img/noodles.jpg"
+                alt="noodles"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Veg Noodles</span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-4 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>25 Mins</span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="img/curry.jpg"
+                alt="curry"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Toffu curry</span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-4 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>25 Mins</span>
               </div>
             </div>
           </div>
@@ -75,9 +188,10 @@
         </div>
 
         <div class="flex justify-center">
-          <div class="bg-secondary-100 text-secondary-200">Load more</div>
+          <div class="btn bg-secondary-100 text-secondary-200">Load more</div>
         </div>
       </main>
     </div>
   </body>
+  <!-- npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch -->
 </html>
